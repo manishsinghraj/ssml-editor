@@ -1,0 +1,220 @@
+{
+    "tags": [
+        {
+            "label": "break",
+            "ssmlTag": " <break time='500ms'/> ",
+            "draggable": true
+        },
+        {
+            "label": "say-as",
+            "ssmlTag": " <say-as interpret-as='currency' language='en - US'>TEXT</say-as> ",
+            "draggable": true
+        },
+        {
+            "label": "sentence",
+            "ssmlTag": " <s>SENTENCE</s> ",
+            "draggable": true
+        },
+        {
+            "label": "paragraph",
+            "ssmlTag": " <p>PARAGRAPH</p> ",
+            "draggable": true
+        },
+        {
+            "label": "prosody",
+            "ssmlTag": " <prosody volume='default'>TEXT</prosody> ",
+            "draggable": true
+        },
+        {
+            "label": "sub",
+            "ssmlTag": " <sub alias='Mercury'>Hg</sub> ",
+            "draggable": true
+        }
+    ],
+    "download": [
+        {
+            "label": "download",
+            "draggable": false
+        }
+    ],
+    "generate": [
+        {
+            "label": "Generate Audio",
+            "draggable": false
+        }
+    ],
+    "ssmlAttributes": {
+        "Break": [
+            {
+                "label": " time",
+                "ssmlTag": " <break time='500ms'/> ",
+                "draggable": true
+            },
+            {
+                "label": " x-weak",
+                "ssmlTag": " <break strength='x-weak'/> ",
+                "draggable": true
+            },
+            {
+                "label": " weak ",
+                "ssmlTag": " <break strength='weak'/> ",
+                "draggable": true
+            },
+            {
+                "label": " medium",
+                "ssmlTag": " <break strength='medium'/> ",
+                "draggable": true
+            },
+            {
+                "label": " strong ",
+                "ssmlTag": " <break strength='strong'/> ",
+                "draggable": true
+            },
+            {
+                "label": " x-strong",
+                "ssmlTag": " <break strength='x-strong'/> ",
+                "draggable": true
+            },
+            {
+                "label": " none",
+                "ssmlTag": " <break strength='none'/> ",
+                "draggable": true
+            }
+        ],
+        "say-as": [
+            {
+                "label": " telephone ",
+                "ssmlTag": " <say-as interpret-as='telephone'>18002021212</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " digits ",
+                "ssmlTag": " <say-as interpret-as='digits'>12345</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " date ",
+                "ssmlTag": " <say-as interpret-as='date' format='yyyymmdd'>1960-09-10</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " cardinal ",
+                "ssmlTag": " <say-as interpret-as='cardinal'>12345</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " ordinal ",
+                "ssmlTag": " <say-as interpret-as='ordinal'>1</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " fraction ",
+                "ssmlTag": " <say-as interpret-as='fraction'>5+1/2</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " bleep ",
+                "ssmlTag": " <say-as interpret-as='expletive'>censor this</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " unit ",
+                "ssmlTag": " say-as interpret-as='unit'>10foot</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " time ",
+                "ssmlTag": " <say-as interpret-as='time'>1'21\"</say-as> ",
+                "draggable": true
+            },
+            {
+                "label": " address ",
+                "ssmlTag": " <say-as interpret-as='address'>TEXT</say-as> ",
+                "draggable": true
+            }
+        ],
+        "sentence": [
+            {
+                "label": " sentence ",
+                "ssmlTag": " <s>SENTENCE</s> ",
+                "draggable": true
+            }
+        ],
+        "paragraph": [
+            {
+                "label": " paragraph ",
+                "ssmlTag": " <p>PARAGRAPH</p> ",
+                "draggable": true
+            }
+        ],
+        "prosody": [
+            {
+                "label": " volume: default ",
+                "ssmlTag": " <prosody volume='default'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: silent ",
+                "ssmlTag": " <prosody volume='silent'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: x-soft ",
+                "ssmlTag": " <prosody volume='x-soft'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: soft ",
+                "ssmlTag": " <prosody volume='soft'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: medium ",
+                "ssmlTag": " <prosody volume='medium'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: loud ",
+                "ssmlTag": " <prosody volume='loud'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " volume: x-loud ",
+                "ssmlTag": " <prosody volume='x-loud'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " rate: x-slow ",
+                "ssmlTag": " <prosody rate='slow'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " rate: medium ",
+                "ssmlTag": " <prosody rate='medium'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " rate: fast ",
+                "ssmlTag": " <prosody rate='fast'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " rate: x-fast ",
+                "ssmlTag": " <prosody rate='x-fast'>TEXT</prosody> ",
+                "draggable": true
+            },
+            {
+                "label": " rate: n% ",
+                "ssmlTag": " <prosody rate='85%'>TEXT</prosody> ",
+                "draggable": true
+            }
+        ],
+        "sub": [
+            {
+                "label": " sub ",
+                "ssmlTag": " <sub alias='Indian Space Research Organization'>ISRO</sub> ",
+                "draggable": true
+            }
+        ]
+    }
+}

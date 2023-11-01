@@ -1,0 +1,11 @@
+/* For dropDown to turn into DropUp */
+
+.custom-dropdown {
+    position: relative;
+}
+
+.custom-dropdown .react-dropdown-select-dropdown {
+    position: absolute;
+    top: -150px;
+    margin-top: -10px;
+}
