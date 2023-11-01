@@ -13,7 +13,6 @@ export default defineConfig({
   resolve: {
     alias: {
       stream: 'readable-stream',
-      './runtimeConfig': './runtimeConfig.browser',
     },
   },
 });

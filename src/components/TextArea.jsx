@@ -28,7 +28,6 @@ const TextArea = (props) => {
 
 
     const generateAudio = () => {
-
         const textArea = document.getElementById('ssmlTextarea');
         textValue(textArea.value, selectedVoice);
     }
@@ -52,7 +51,6 @@ const TextArea = (props) => {
                 className="w-3/5 h-80 p-2 border  border-red-400 rounded-lg bg-transparent text-white"
                 placeholder="Enter your text here, then Drag and drop the tags between the words..." style={{ outline: 'none' }}
                 onChange={handleOnChange}
-                required
             >
             </textarea>
             <div className='flex border border-solid border-fuchsia-500 w-3/5 h-15 rounded-lg p-4 font-medium'>

@@ -14,12 +14,12 @@ function App() {
   const buttons = data;
   const [audioUrl, setAudioUrl] = useState("");
   const [voice, setVoice] = useState("Danielle");
+  const [disableClick, setDisableClick] = useState(false);
   const [showComponent, setShowComponent] = useState(false);
   const [showAttributes, setShowAttributes] = useState(false);
   const [textToSpeechValue, setTextToSpeechValue] = useState('');
   const [selectedAttributeId, setSelectedAttributeId] = useState(-1);
   const [generateButton, setGenerateButton] = useState(buttons.generate);
-  const [disableClick, setDisableClick] = useState(false);
 
   const generate = [...buttons.generate];
 
