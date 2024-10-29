@@ -7,6 +7,7 @@ import Audio from './components/Audio'
 import Download from './components/Download'
 import data from './assets/data.json';
 import React, { useState } from 'react';
+import Info from './components/Info'
 
 
 function App() {
@@ -14,12 +15,12 @@ function App() {
   const buttons = data;
   const [audioUrl, setAudioUrl] = useState("");
   const [voice, setVoice] = useState("Danielle");
-  const [disableClick, setDisableClick] = useState(false);
   const [showComponent, setShowComponent] = useState(false);
   const [showAttributes, setShowAttributes] = useState(false);
   const [textToSpeechValue, setTextToSpeechValue] = useState('');
   const [selectedAttributeId, setSelectedAttributeId] = useState(-1);
   const [generateButton, setGenerateButton] = useState(buttons.generate);
+  const [disableClick, setDisableClick] = useState(false);
 
   const generate = [...buttons.generate];
 
@@ -66,8 +67,9 @@ function App() {
           <TextArea buttons={buttons.ssmlAttributes} generateButton={generateButton} disableClick={disableClick} displayAtrributes={showAttributes} selectedAttributeId={selectedAttributeId} textValue={getTextToSpeechValue} textAreaContentChanged={textAreaContentChanged} />
           <TextToSpeech getAudioUrl={getAudioUrl} text={textToSpeechValue} voice={voice} />
           {showComponent && <Audio audioUrl={audioUrl} />}
-          {showComponent && <Download buttons={buttons} audioUrl={audioUrl}/>}
+          {showComponent && <Download buttons={buttons} audioUrl={audioUrl} />}
         </div>
+          <Info />
       </div>
     </>
   )
