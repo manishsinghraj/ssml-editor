@@ -31,7 +31,7 @@ const Info = () => {
                     {copied && <span className='ml-6 text-white bg-black'>Copied!</span>}
                 </h2>
                 <div>
-                    <img src="src/assets/ssml-demo-gif.gif" alt="ssml-demo-vid" />
+                    <img src="../assets/ssml-demo-gif.gif" alt="ssml-demo-vid" />
                 </div>
                 <div>
                     <Audio audioUrl={audioUrl} />
