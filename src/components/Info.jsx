@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import audioUrl from "../assets/audio.mp3"; 
 import Audio from './Audio';
+import gifSrc from '../assets/ssml-demo-gif.gif';
 
 const Info = () => {
     const [copied, setCopied] = useState(false);
@@ -31,7 +32,7 @@ const Info = () => {
                     {copied && <span className='ml-6 text-white bg-black'>Copied!</span>}
                 </h2>
                 <div>
-                    <img src="./src/assets/ssml-demo-gif.gif" alt="ssml-demo-vid" />
+                    <img src={gifSrc} alt="ssml-demo-vid" />
                 </div>
                 <div>
                     <Audio audioUrl={audioUrl} />
