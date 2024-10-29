@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { calculateButtonWidth } from '../utils/widthCalculations'
 
 export const NonDraggableButtons = (props) => {
@@ -7,10 +7,11 @@ export const NonDraggableButtons = (props) => {
     const bgColorClass = buttonColor;
 
     const handleClick = () => {
-        if(label === "download"){
+        if (label === "download") {
             downloadAudio();
+        } else {
+            generateAudioClick();
         }
-        generateAudioClick();
     }
 
     return (
@@ -19,8 +20,7 @@ export const NonDraggableButtons = (props) => {
             className={`ml-4 rounded-md border-2 border-solid border-indigo-800 w-20 h-9 ${bgColorClass}`}
             style={{ width: calculateButtonWidth(label) }}
             onClick={handleClick}
-            disabled={disableClick}
-        >
+            disabled={disableClick}>
             {label}
         </button>
     )

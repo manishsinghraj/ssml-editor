@@ -22,7 +22,8 @@ const DraggableButton = (props) => {
             onDragStart={handleDragStart}
             onClick={handleOnClick}
             className='ml-4 rounded-md border border-solid border-yellow-200 w-20 h-9'
-            style={{ width: calculateButtonWidth(label) }}>
+            style={{ width: calculateButtonWidth(label) }}
+        >
             {label}
         </button>
     );
